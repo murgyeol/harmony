@@ -228,6 +228,7 @@ h3 { font-size: clamp(1.55rem, 2vw, 2rem); line-height: 1.14; }
 .category-grid--design .project-tile--wide { grid-column: span 12; }
 .category-grid--design .project-tile:nth-child(even) { margin-top: 0; }
 .category-grid--design .project-tile__media { aspect-ratio: auto; }
+.category-grid--design .project-tile__media + .project-tile__media { margin-top: 16px; }
 .category-grid--design .project-tile__media img {
   width: 100%;
   height: auto;

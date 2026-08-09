@@ -16,6 +16,12 @@ const projects: ProjectCard[] = [
     copy: "",
     image: "/project-photos/design/02_평창수석테마공원-공모/01_57b01bd64aa3b.jpg",
     alt: "평창수석테마공원 공모",
+    additionalImages: [
+      {
+        image: "/project-photos/design/02_평창수석테마공원-공모/02_susek02.gif",
+        alt: "평창수석테마공원 공모 추가 이미지",
+      },
+    ],
     shape: "landscape",
   },
   {

@@ -10,6 +10,7 @@ export type ProjectCard = {
   tags?: string[];
   status?: string;
   shape?: "portrait" | "landscape" | "wide";
+  additionalImages?: Array<{ image: string; alt: string }>;
 };
 
 export function CategoryPage({
@@ -47,6 +48,11 @@ export function CategoryPage({
                   <img src={project.image} alt={project.alt} />
                   {showIndexes && <span className="project-tile__index">{String(index + 1).padStart(2, "0")}</span>}
                 </div>
+                {project.additionalImages?.map((item) => (
+                  <div className="project-tile__media" key={item.image}>
+                    <img src={item.image} alt={item.alt} />
+                  </div>
+                ))}
                 <div className="project-tile__meta">
                   <div>
                     {project.tags && <div className="tag-row">{project.tags.map((tag) => <span key={tag}>{tag}</span>)}</div>}
