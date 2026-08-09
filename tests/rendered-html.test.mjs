@@ -27,7 +27,7 @@ const routes = [
   ["/about", "Our Philosophy"],
   ["/projects", "Our Work"],
   ["/projects/model-house", "해링턴 목감 견본주택"],
-  ["/projects/office", "Tech Hub HQ"],
+  ["/projects/office", "카라 더 봄 센터"],
   ["/projects/house", "The Glass Pavilion"],
   ["/projects/design", "태재대학교 리모델링"],
 ];
@@ -81,6 +81,9 @@ for (const [pathname, expected] of routes) {
       assert.doesNotMatch(html, /Project category|project-tile__index/);
     }
     if (pathname === "/projects/office") {
+      assert.match(html, /서울대 정밀기계연구소/);
+      assert.match(html, /안성 물류센터/);
+      assert.match(html, /쿠팡 하남 물류센터/);
       assert.doesNotMatch(html, /Project category|project-tile__index/);
     }
     if (pathname === "/projects/model-house") {
