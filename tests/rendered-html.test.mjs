@@ -44,7 +44,7 @@ for (const [pathname, expected] of routes) {
     assert.doesNotMatch(html, /codex-preview|Your site is taking shape/);
     assert.doesNotMatch(
       html,
-      /Quiet confidence|Structure with permanence|Begin a project|Let&#x27;s build something enduring/,
+      /Quiet confidence|Structure with permanence|Begin a project|Let&#x27;s build something enduring|What we build|Explore work/,
     );
   });
 }

@@ -52,8 +52,7 @@ export default function Home() {
         </section>
 
         <section className="section shell" aria-labelledby="services-title">
-          <div className="section-intro editorial-offset">
-            <p className="eyebrow">What we build</p>
+          <div className="section-intro">
             <h2 id="services-title">Our Services</h2>
             <p>Expertise across disciplines, unified by a commitment to enduring quality.</p>
           </div>
@@ -63,7 +62,6 @@ export default function Home() {
                 <span className="service-card__number">{service.number}</span>
                 <h3>{service.title}</h3>
                 <p>{service.copy}</p>
-                <span className="text-link">Explore work <span aria-hidden="true">↗</span></span>
               </Link>
             ))}
           </div>
