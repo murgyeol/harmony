@@ -25,12 +25,12 @@ const projects = [
     alt: "Modern high-rise lobby with concrete columns and glass walls",
   },
   {
-    title: "아파트 분양 모델하우스",
+    title: "공동주택 모델하우스",
     location: "Hyosungtonw, Harrington",
     category: "Model House",
     href: "/projects/model-house",
     image: "/project-photos/model-house/mh01.png",
-    alt: "아파트 분양 모델하우스 Hyosungtonw Harrington",
+    alt: "공동주택 모델하우스 Hyosungtonw Harrington",
     locale: "ko",
   },
   {
