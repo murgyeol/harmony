@@ -5,9 +5,18 @@ import { SiteHeader } from "@/components/SiteHeader";
 export const metadata: Metadata = { title: "About Us" };
 
 const principles = [
-  ["Innovation", "Pushing the boundaries of modern engineering while respecting timeless architectural proportions."],
-  ["Sustainability", "Integrating environmentally conscious materials and practices to ensure structural longevity."],
-  ["Integrity", "An unwavering commitment to precision, transparency, and excellence in every phase."],
+  [
+    "Innovation",
+    "We blend warm, human-centered innovation with thoughtful technology, constantly exploring new ways to design spaces that quietly enrich everyday life and adapt to how people truly live.",
+  ],
+  [
+    "Sustainability",
+    "We design with lasting value in mind, choosing materials and forms that age gracefully, so each space grows more meaningful and beautiful as time passes.",
+  ],
+  [
+    "Integrity",
+    "To build spaces our clients can truly trust, we use honest materials and meticulous construction, doing our utmost at every step to minimize defects.",
+  ],
 ];
 
 const leaders = [
