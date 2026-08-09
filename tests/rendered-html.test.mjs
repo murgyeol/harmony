@@ -46,5 +46,8 @@ for (const [pathname, expected] of routes) {
       html,
       /Quiet confidence|Structure with permanence|Begin a project|Let&#x27;s build something enduring|What we build|Explore work/,
     );
+    if (pathname === "/") {
+      assert.doesNotMatch(html, /class="eyebrow">Harmony Construction/);
+    }
   });
 }

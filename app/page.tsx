@@ -42,7 +42,6 @@ export default function Home() {
           />
           <div className="home-hero__wash" />
           <div className="home-hero__content shell">
-            <p className="eyebrow">Harmony Construction</p>
             <h1>
               <span>조화(調和)를 짓다.</span>
               <span>조화(調和)를 담다</span>
