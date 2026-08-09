@@ -40,6 +40,11 @@ for (const [pathname, expected] of routes) {
 
     const html = await response.text();
     assert.match(html, /HARMONY/);
+    assert.match(html, /주식회사 하모니 건설/);
+    assert.match(html, /010-9246-2148/);
+    assert.match(html, /aceboon@kakao\.com/);
+    assert.match(html, /류마타워/);
+    assert.doesNotMatch(html, /Privacy Policy|Terms of Service|Instagram|LinkedIn|Built for longevity/);
     assert.match(html, new RegExp(expected.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")));
     assert.doesNotMatch(html, /codex-preview|Your site is taking shape/);
     assert.doesNotMatch(
