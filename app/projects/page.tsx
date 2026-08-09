@@ -47,7 +47,7 @@ export default function ProjectsPage() {
       <SiteHeader active="projects" />
       <main className="page-main" id="top">
         <div className="shell">
-          <header className="page-hero editorial-offset">
+          <header className="page-hero">
             <h1>Our Work</h1>
             <p>A collection of spaces shaped by human-centered innovation, sustainable materials, and an unwavering commitment to construction integrity.</p>
           </header>

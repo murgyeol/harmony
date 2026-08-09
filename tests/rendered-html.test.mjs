@@ -25,7 +25,7 @@ async function render(pathname) {
 const routes = [
   ["/", "조화(調和)를 짓다."],
   ["/about", "Our Philosophy"],
-  ["/projects", "Selected portfolio"],
+  ["/projects", "Our Work"],
   ["/projects/model-house", "The Pavilion Model"],
   ["/projects/office", "Tech Hub HQ"],
   ["/projects/house", "The Glass Pavilion"],
@@ -54,6 +54,10 @@ for (const [pathname, expected] of routes) {
       assert.doesNotMatch(html, /<span>0[123]<\/span>/);
       assert.match(html, /section-intro section-intro--center/);
       assert.match(html, /조화를 짓고, 조화를 담는 공간/);
+    }
+    if (pathname === "/projects") {
+      assert.doesNotMatch(html, /Selected portfolio|page-hero editorial-offset/);
+      assert.match(html, /human-centered innovation, sustainable materials/);
     }
   });
 }
