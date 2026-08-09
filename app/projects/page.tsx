@@ -32,12 +32,12 @@ const projects = [
     alt: "Minimal concrete and timber house set within a forest",
   },
   {
-    title: "Nexus Cultural Center",
-    location: "Seattle, Washington",
+    title: "태재대학교 리모델링",
+    location: "제안설계",
     category: "Design",
     href: "/projects/design",
-    image: "/stitch/projects-04.jpg",
-    alt: "Monumental modern cultural center in pale textured stone",
+    image: "/project-photos/design/d01.png",
+    alt: "태재대학교 리모델링 제안설계",
   },
 ];
 

@@ -58,6 +58,8 @@ for (const [pathname, expected] of routes) {
     if (pathname === "/projects") {
       assert.doesNotMatch(html, /Selected portfolio|page-hero editorial-offset/);
       assert.match(html, /human-centered innovation, sustainable materials/);
+      assert.match(html, /태재대학교 리모델링/);
+      assert.match(html, /\/project-photos\/design\/d01\.png/);
     }
   });
 }
