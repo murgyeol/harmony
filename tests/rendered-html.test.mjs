@@ -74,6 +74,7 @@ for (const [pathname, expected] of routes) {
       assert.match(html, /평창수석테마공원 공모/);
       assert.match(html, /건설인력플랫폼 김반장/);
       assert.doesNotMatch(html, /Cultural|Concept|Interior|Facade|Material|A conceptual exploration/);
+      assert.doesNotMatch(html, /Project category|project-tile__index/);
     }
   });
 }

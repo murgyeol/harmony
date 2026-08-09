@@ -35,6 +35,8 @@ export default function DesignPage() {
       intro="Exploring the intersection of aesthetic ambition and functional longevity through spatial harmony, material integrity, and respect for the environment."
       projects={projects}
       cta="Discuss an ambitious concept with our design team."
+      showCategoryLabel={false}
+      showIndexes={false}
     />
   );
 }

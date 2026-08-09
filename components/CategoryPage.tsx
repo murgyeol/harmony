@@ -18,12 +18,16 @@ export function CategoryPage({
   intro,
   projects,
   cta,
+  showCategoryLabel = true,
+  showIndexes = true,
 }: {
   category: string;
   title: string;
   intro: string;
   projects: ProjectCard[];
   cta: string;
+  showCategoryLabel?: boolean;
+  showIndexes?: boolean;
 }) {
   return (
     <>
@@ -32,7 +36,7 @@ export function CategoryPage({
         <div className="shell">
           <ProjectNav active={category} />
           <header className="page-hero editorial-offset">
-            <p className="eyebrow">Project category</p>
+            {showCategoryLabel && <p className="eyebrow">Project category</p>}
             <h1>{title}</h1>
             <p>{intro}</p>
           </header>
@@ -41,7 +45,7 @@ export function CategoryPage({
               <article className={`project-tile ${project.shape ? `project-tile--${project.shape}` : ""}`} key={project.title}>
                 <div className="project-tile__media">
                   <img src={project.image} alt={project.alt} />
-                  <span className="project-tile__index">{String(index + 1).padStart(2, "0")}</span>
+                  {showIndexes && <span className="project-tile__index">{String(index + 1).padStart(2, "0")}</span>}
                 </div>
                 <div className="project-tile__meta">
                   <div>
