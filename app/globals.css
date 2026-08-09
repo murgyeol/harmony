@@ -273,7 +273,7 @@ h3 { font-size: clamp(1.55rem, 2vw, 2rem); line-height: 1.14; }
 .philosophy__grid > div { grid-column: 7 / span 6; padding-left: 40px; }
 .philosophy__grid h2 { margin-bottom: 28px; }
 .philosophy__grid .lead { margin-bottom: 24px; color: var(--ink); font-size: 1.18rem; line-height: 1.65; }
-.philosophy__grid div > p:last-child { color: var(--ink-soft); line-height: 1.7; }
+.philosophy__grid div > p:not(.eyebrow):not(.lead) { margin-top: 20px; color: var(--ink-soft); line-height: 1.8; }
 
 .principles-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
 .principles-grid article { min-height: 300px; padding: 28px; border: 1px solid var(--line); display: flex; flex-direction: column; }

@@ -31,8 +31,37 @@ export default function AboutPage() {
             <img src="/stitch/about-01.jpg" alt="Minimal interior opening toward a tranquil garden" />
             <div>
               <h2>Our Philosophy</h2>
-              <p className="lead">We believe true harmony in construction is found at the intersection of structural permanence and emotional resonance. A building is not merely a shelter; it is a canvas for life.</p>
-              <p>By adhering to strict architectural principles while maintaining deep respect for natural materials, we create spaces that feel both grounded and expansive.</p>
+              <p className="lead">
+                조화를 짓고, 조화를 담는 공간.<br />
+                당신의 일상에 스며드는 감성과 기술의 건축을 만들어갑니다.
+              </p>
+              <p>
+                최근의 건축·인테리어 트렌드는 단순한 ‘멋’이나 ‘기능성’을 넘어,
+                사람 중심의 가치와 지속 가능한 아름다움을 지향합니다. 삶의 방식이
+                다양해지고, 공간에 대한 생각이 깊어지는 지금, 건축은 더 이상 구조물에
+                머물지 않고, 사람의 삶을 담는 그릇이 되어야 합니다.
+              </p>
+              <p>
+                우리는 이러한 흐름에 발맞춰, 조화로운 디자인과 따뜻한 기술로 삶의 질을
+                높이는 공간을 제안합니다. 우리는 단순히 공간을 ‘꾸미는’ 것이 아닌,
+                고객 한 사람 한 사람의 생활 방식, 가치관, 감성을 반영한 공간을 ‘짓고,
+                담는’ 건축 인테리어 전문 회사입니다.
+              </p>
+              <p>
+                우리는 당신의 일상에 꼭 맞는 공간을 만들어 갑니다. 우리가 짓는 공간에는
+                늘 따뜻한 혁신(Human-Centered Innovation)이 담겨 있습니다. 눈에 보이는
+                형태보다, 그 안에 담긴 생각과 마음을 더 중요하게 여기며 사람, 공간,
+                자연이 조화를 이루는 디자인을 고민합니다.
+              </p>
+              <p>
+                불필요한 것을 덜어내고, 본질을 남기는 간결함 속에 세심한 디테일과 깊은
+                철학이 깃든 공간을 만들어내는 것, 그것이 우리가 추구하는 진정한
+                건축입니다.
+              </p>
+              <p>
+                앞으로도 우리는 ‘조화를 짓고, 조화를 담는’ 공간으로 고객 여러분의 삶에
+                영감을 더하고, 지속 가능한 아름다움을 실현해 나가겠습니다.
+              </p>
             </div>
           </div>
         </section>

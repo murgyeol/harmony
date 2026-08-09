@@ -53,6 +53,7 @@ for (const [pathname, expected] of routes) {
       assert.doesNotMatch(html, /About Harmony|Our approach|How we work|>People</);
       assert.doesNotMatch(html, /<span>0[123]<\/span>/);
       assert.match(html, /section-intro section-intro--center/);
+      assert.match(html, /조화를 짓고, 조화를 담는 공간/);
     }
   });
 }
