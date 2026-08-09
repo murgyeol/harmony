@@ -80,5 +80,8 @@ for (const [pathname, expected] of routes) {
     if (pathname === "/projects/house") {
       assert.doesNotMatch(html, /Project category|project-tile__index/);
     }
+    if (pathname === "/projects/office") {
+      assert.doesNotMatch(html, /Project category|project-tile__index/);
+    }
   });
 }

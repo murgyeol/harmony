@@ -42,6 +42,8 @@ export default function OfficePage() {
       intro="Where structural integrity meets human comfort. Our commercial spaces foster collaboration, focus, and longevity with quiet confidence and architectural precision."
       projects={projects}
       cta="Planning a workplace with lasting value?"
+      showCategoryLabel={false}
+      showIndexes={false}
     />
   );
 }
