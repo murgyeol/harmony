@@ -8,12 +8,12 @@ export const metadata: Metadata = { title: "Our Work" };
 
 const projects = [
   {
-    title: "목감 해링턴 아파트",
-    location: "실내인테리어",
+    title: "실내 인테리어",
+    location: "목감 해링턴 아파트",
     category: "House",
     href: "/projects/house",
     image: "/project-photos/house/h01.png",
-    alt: "목감 해링턴 아파트 실내인테리어",
+    alt: "목감 해링턴 아파트 실내 인테리어",
     locale: "ko",
   },
   {

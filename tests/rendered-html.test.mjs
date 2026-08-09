@@ -61,6 +61,7 @@ for (const [pathname, expected] of routes) {
       assert.match(html, /태재대학교 리모델링/);
       assert.match(html, /\/project-photos\/design\/d01\.png/);
       assert.match(html, /목감 해링턴 아파트/);
+      assert.match(html, /실내 인테리어/);
       assert.match(html, /\/project-photos\/house\/h01\.png/);
       assert.match(html, /class="mosaic-card mosaic-card--1" lang="ko"/);
       assert.match(html, /공동주택 모델하우스/);
