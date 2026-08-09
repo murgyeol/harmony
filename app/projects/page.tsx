@@ -4,7 +4,7 @@ import { ProjectNav } from "@/components/ProjectNav";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
 
-export const metadata: Metadata = { title: "Projects" };
+export const metadata: Metadata = { title: "Our Work" };
 
 const projects = [
   {
@@ -48,9 +48,8 @@ export default function ProjectsPage() {
       <main className="page-main" id="top">
         <div className="shell">
           <header className="page-hero editorial-offset">
-            <p className="eyebrow">Selected portfolio</p>
-            <h1>Projects</h1>
-            <p>A collection of environments shaped by structural clarity, natural materials, and a commitment to enduring quality.</p>
+            <h1>Our Work</h1>
+            <p>A collection of spaces shaped by human-centered innovation, sustainable materials, and an unwavering commitment to construction integrity.</p>
           </header>
           <ProjectNav />
           <section className="projects-mosaic" aria-label="Selected projects">
