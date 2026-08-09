@@ -278,7 +278,7 @@ h3 { font-size: clamp(1.55rem, 2vw, 2rem); line-height: 1.14; }
 .principles-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
 .principles-grid article { min-height: 300px; padding: 28px; border: 1px solid var(--line); display: flex; flex-direction: column; }
 .principles-grid h3 { margin-top: 26px; }
-.principles-grid p { margin-top: auto; padding-top: 28px; color: var(--ink-soft); }
+.principles-grid p { margin-top: 50px; color: var(--ink-soft); }
 
 .leadership { padding-block: var(--section); border-top: 1px solid var(--line); background: var(--paper-low); }
 .leadership-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
