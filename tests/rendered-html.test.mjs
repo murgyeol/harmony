@@ -29,7 +29,7 @@ const routes = [
   ["/projects/model-house", "The Pavilion Model"],
   ["/projects/office", "Tech Hub HQ"],
   ["/projects/house", "The Glass Pavilion"],
-  ["/projects/design", "The Atrium Pavilion"],
+  ["/projects/design", "태재대학교 리모델링"],
 ];
 
 for (const [pathname, expected] of routes) {
@@ -69,6 +69,11 @@ for (const [pathname, expected] of routes) {
       assert.match(html, /\/project-photos\/model-house\/mh01\.png/);
       assert.match(html, /오피스 인테리어/);
       assert.match(html, /\/project-photos\/office\/ofi01\.png/);
+    }
+    if (pathname === "/projects/design") {
+      assert.match(html, /평창수석테마공원 공모/);
+      assert.match(html, /건설인력플랫폼 김반장/);
+      assert.doesNotMatch(html, /Cultural|Concept|Interior|Facade|Material|A conceptual exploration/);
     }
   });
 }

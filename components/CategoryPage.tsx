@@ -47,7 +47,7 @@ export function CategoryPage({
                   <div>
                     {project.tags && <div className="tag-row">{project.tags.map((tag) => <span key={tag}>{tag}</span>)}</div>}
                     <h2>{project.title}</h2>
-                    <p>{project.copy}</p>
+                    {project.copy && <p>{project.copy}</p>}
                   </div>
                   {project.status && <span className="status">{project.status}</span>}
                 </div>
