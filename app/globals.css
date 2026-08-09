@@ -225,6 +225,14 @@ h3 { font-size: clamp(1.55rem, 2vw, 2rem); line-height: 1.14; }
 .project-tile__meta { display: flex; justify-content: space-between; gap: 24px; margin-top: 22px; }
 .project-tile__meta h2 { margin-bottom: 8px; font-size: clamp(1.75rem, 2.5vw, 2.45rem); }
 .project-tile__meta p { max-width: 620px; color: var(--ink-soft); }
+.category-grid--design .project-tile--wide { grid-column: span 12; }
+.category-grid--design .project-tile:nth-child(even) { margin-top: 0; }
+.category-grid--design .project-tile__media { aspect-ratio: auto; }
+.category-grid--design .project-tile__media img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
 .tag-row { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 14px; }
 .tag-row span, .status {
   padding: 6px 9px;
