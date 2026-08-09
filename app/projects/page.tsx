@@ -8,12 +8,12 @@ export const metadata: Metadata = { title: "Our Work" };
 
 const projects = [
   {
-    title: "The Glass House",
-    location: "Malibu, California",
+    title: "목감 해링턴 아파트",
+    location: "실내인테리어",
     category: "House",
     href: "/projects/house",
-    image: "/stitch/projects-01.jpg",
-    alt: "Modern cliffside house at dusk with warm interior lighting",
+    image: "/project-photos/house/h01.png",
+    alt: "목감 해링턴 아파트 실내인테리어",
   },
   {
     title: "Apex Tower",

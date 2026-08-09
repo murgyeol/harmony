@@ -60,6 +60,8 @@ for (const [pathname, expected] of routes) {
       assert.match(html, /human-centered innovation, sustainable materials/);
       assert.match(html, /태재대학교 리모델링/);
       assert.match(html, /\/project-photos\/design\/d01\.png/);
+      assert.match(html, /목감 해링턴 아파트/);
+      assert.match(html, /\/project-photos\/house\/h01\.png/);
     }
   });
 }
