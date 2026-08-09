@@ -1,53 +1,42 @@
 import type { Metadata } from "next";
-import { CategoryPage, type ProjectCard } from "@/components/CategoryPage";
+import { ProjectNav } from "@/components/ProjectNav";
+import { SiteFooter } from "@/components/SiteFooter";
+import { SiteHeader } from "@/components/SiteHeader";
 
 export const metadata: Metadata = { title: "House" };
 
-const projects: ProjectCard[] = [
-  {
-    title: "The Glass Pavilion",
-    copy: "A study in transparency and natural light integration.",
-    image: "/stitch/house-01.jpg",
-    alt: "Modern home with flat roof, concrete facade, and timber slats",
-    status: "Completed",
-    shape: "portrait",
-  },
-  {
-    title: "Concrete & Light",
-    copy: "Raw materials refined for everyday living.",
-    image: "/stitch/house-02.jpg",
-    alt: "Minimal living room with beige furniture and polished concrete floor",
-    status: "In Progress",
-    shape: "portrait",
-  },
-  {
-    title: "Forest Retreat",
-    copy: "Brutalist forms softened by the surrounding landscape.",
-    image: "/stitch/house-03.jpg",
-    alt: "Board-formed concrete home nested in a dense forest",
-    status: "Completed",
-    shape: "landscape",
-  },
-  {
-    title: "The Floating Spine",
-    copy: "Engineering precision translated into residential elegance.",
-    image: "/stitch/house-04.jpg",
-    alt: "Floating oak staircase with frameless glass balustrades",
-    status: "Completed",
-    shape: "landscape",
-  },
-];
+const photos = [
+  "h01.png",
+  "143becaac2a9a.jpg",
+  "176b65bf8bd58.jpg",
+  "1443f9998f5ee.jpg",
+  "1781b12f64250.jpg",
+  "197ead50ca863.jpg",
+  "3870583de9a4b.jpg",
+  "42cf4a3280e76.jpg",
+  "535132b52efb2.jpg",
+  "61f288fbf42ce.jpg",
+  "781f04eb19043.jpg",
+] as const;
 
 export default function HousePage() {
   return (
-    <CategoryPage
-      category="house"
-      title="House"
-      intro="Residential spaces designed around structural integrity and human comfort. We balance the rugged reality of construction with the refined experience of living."
-      projects={projects}
-      cta="Ready to discuss your residential project?"
-      showCategoryLabel={false}
-      showIndexes={false}
-    />
+    <>
+      <SiteHeader active="projects" />
+      <main className="page-main" id="top">
+        <div className="shell">
+          <ProjectNav active="house" />
+          <h1 className="visually-hidden">House</h1>
+          <section className="house-gallery" aria-label="House project gallery">
+            {photos.map((photo) => (
+              <figure className="house-gallery__item" key={photo}>
+                <img src={`/project-photos/house/${photo}`} alt="" />
+              </figure>
+            ))}
+          </section>
+        </div>
+      </main>
+      <SiteFooter />
+    </>
   );
 }

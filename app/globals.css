@@ -234,6 +234,44 @@ h3 { font-size: clamp(1.55rem, 2vw, 2rem); line-height: 1.14; }
   height: auto;
   object-fit: contain;
 }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.house-gallery {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: clamp(18px, 2.4vw, 36px);
+  padding: clamp(56px, 7vw, 96px) 0 var(--section);
+  align-items: start;
+}
+.house-gallery__item { grid-column: span 6; margin: 0; }
+.house-gallery__item:first-child { grid-column: span 12; }
+.house-gallery__item:nth-child(2),
+.house-gallery__item:nth-child(4),
+.house-gallery__item:nth-child(5) { grid-column: span 4; }
+.house-gallery__item:nth-child(3) { grid-column: span 8; align-self: center; }
+.house-gallery__item:nth-child(6),
+.house-gallery__item:nth-child(9),
+.house-gallery__item:nth-child(10) { grid-column: span 7; }
+.house-gallery__item:nth-child(7),
+.house-gallery__item:nth-child(8),
+.house-gallery__item:nth-child(11) { grid-column: span 5; }
+.house-gallery__item img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--line);
+}
 .tag-row { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 14px; }
 .tag-row span, .status {
   padding: 6px 9px;
@@ -319,6 +357,9 @@ h3 { font-size: clamp(1.55rem, 2vw, 2rem); line-height: 1.14; }
   .service-grid { grid-template-columns: repeat(2, 1fr); gap-block: 54px; }
   .service-card { min-height: 240px; }
   .project-tile, .project-tile--wide { grid-column: span 12; margin-top: 0 !important; }
+  .house-gallery__item,
+  .house-gallery__item:nth-child(n) { grid-column: span 6; }
+  .house-gallery__item:first-child { grid-column: span 12; }
   .projects-mosaic { gap: 72px 20px; }
   .mosaic-card, .mosaic-card--1, .mosaic-card--2, .mosaic-card--3, .mosaic-card--4 { grid-column: span 6; margin-top: 0; }
   .mosaic-card__image, .mosaic-card--2 .mosaic-card__image, .mosaic-card--3 .mosaic-card__image { height: 52vw; }
@@ -343,6 +384,8 @@ h3 { font-size: clamp(1.55rem, 2vw, 2rem); line-height: 1.14; }
   .page-main { padding-top: 72px; }
   .page-hero { padding-block: 82px 64px; }
   .project-tile__meta { flex-direction: column; }
+  .house-gallery { display: block; padding-top: 42px; }
+  .house-gallery__item { margin-bottom: 18px; }
   .status { order: -1; }
   .projects-mosaic { display: block; padding-top: 64px; }
   .mosaic-card { display: block; margin-bottom: 70px !important; }
