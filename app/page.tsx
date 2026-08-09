@@ -69,13 +69,6 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="feature-band">
-          <div className="shell feature-band__inner">
-            <p className="eyebrow">Quiet confidence</p>
-            <h2>Structure with permanence.<br />Spaces with resonance.</h2>
-            <Link className="button button--dark" href="/about">Our philosophy</Link>
-          </div>
-        </section>
       </main>
       <SiteFooter />
     </>
