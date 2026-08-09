@@ -26,7 +26,7 @@ const routes = [
   ["/", "조화(調和)를 짓다."],
   ["/about", "Our Philosophy"],
   ["/projects", "Our Work"],
-  ["/projects/model-house", "The Pavilion Model"],
+  ["/projects/model-house", "해링턴 목감 견본주택"],
   ["/projects/office", "Tech Hub HQ"],
   ["/projects/house", "The Glass Pavilion"],
   ["/projects/design", "태재대학교 리모델링"],
@@ -82,6 +82,11 @@ for (const [pathname, expected] of routes) {
     }
     if (pathname === "/projects/office") {
       assert.doesNotMatch(html, /Project category|project-tile__index/);
+    }
+    if (pathname === "/projects/model-house") {
+      assert.match(html, /인천 코아루 견본주택/);
+      assert.match(html, /신마곡 벽산 블루밍/);
+      assert.doesNotMatch(html, /Project category|project-tile__index|Residential|Minimalist|Multi-Story|Urban|Estate|Cantilever/);
     }
   });
 }
