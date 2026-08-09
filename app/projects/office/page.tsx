@@ -3,31 +3,33 @@ import { CategoryPage, type ProjectCard } from "@/components/CategoryPage";
 
 export const metadata: Metadata = { title: "Office Projects" };
 
+const commonCopy = "실내 인테리어 공사";
+
 const projects: ProjectCard[] = [
   {
     title: "카라 더 봄 센터",
-    copy: "",
+    copy: commonCopy,
     image: "/project-photos/office/01_카라 더 봄 센터/01_kara.jpg",
     alt: "카라 더 봄 센터",
     shape: "landscape",
   },
   {
     title: "서울대 정밀기계연구소",
-    copy: "",
+    copy: commonCopy,
     image: "/project-photos/office/02_서울대 정밀기계연구소/01_sun.png",
     alt: "서울대 정밀기계연구소",
     shape: "landscape",
   },
   {
     title: "안성 물류센터",
-    copy: "",
+    copy: commonCopy,
     image: "/project-photos/office/03_안성 물류센터/01_anseong.jpg",
     alt: "안성 물류센터",
     shape: "landscape",
   },
   {
     title: "쿠팡 하남 물류센터",
-    copy: "",
+    copy: commonCopy,
     image: "/project-photos/office/04_쿠팡 하남 물류센터/01_hanam.png",
     alt: "쿠팡 하남 물류센터",
     shape: "landscape",

@@ -84,6 +84,7 @@ for (const [pathname, expected] of routes) {
       assert.match(html, /서울대 정밀기계연구소/);
       assert.match(html, /안성 물류센터/);
       assert.match(html, /쿠팡 하남 물류센터/);
+      assert.match(html, /실내 인테리어 공사/);
       assert.doesNotMatch(html, /Project category|project-tile__index/);
     }
     if (pathname === "/projects/model-house") {
