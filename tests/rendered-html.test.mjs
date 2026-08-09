@@ -49,5 +49,10 @@ for (const [pathname, expected] of routes) {
     if (pathname === "/") {
       assert.doesNotMatch(html, /class="eyebrow">Harmony Construction/);
     }
+    if (pathname === "/about") {
+      assert.doesNotMatch(html, /About Harmony|Our approach|How we work|>People</);
+      assert.doesNotMatch(html, /<span>0[123]<\/span>/);
+      assert.match(html, /section-intro section-intro--center/);
+    }
   });
 }

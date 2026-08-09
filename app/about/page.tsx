@@ -5,9 +5,9 @@ import { SiteHeader } from "@/components/SiteHeader";
 export const metadata: Metadata = { title: "About Us" };
 
 const principles = [
-  ["01", "Innovation", "Pushing the boundaries of modern engineering while respecting timeless architectural proportions."],
-  ["02", "Sustainability", "Integrating environmentally conscious materials and practices to ensure structural longevity."],
-  ["03", "Integrity", "An unwavering commitment to precision, transparency, and excellence in every phase."],
+  ["Innovation", "Pushing the boundaries of modern engineering while respecting timeless architectural proportions."],
+  ["Sustainability", "Integrating environmentally conscious materials and practices to ensure structural longevity."],
+  ["Integrity", "An unwavering commitment to precision, transparency, and excellence in every phase."],
 ];
 
 const leaders = [
@@ -23,7 +23,6 @@ export default function AboutPage() {
       <SiteHeader active="about" />
       <main className="page-main" id="top">
         <section className="shell about-hero">
-          <p className="eyebrow">About Harmony</p>
           <h1>Building structures that honor the environment and elevate the human experience.</h1>
         </section>
 
@@ -31,7 +30,6 @@ export default function AboutPage() {
           <div className="shell philosophy__grid">
             <img src="/stitch/about-01.jpg" alt="Minimal interior opening toward a tranquil garden" />
             <div>
-              <p className="eyebrow">Our approach</p>
               <h2>Our Philosophy</h2>
               <p className="lead">We believe true harmony in construction is found at the intersection of structural permanence and emotional resonance. A building is not merely a shelter; it is a canvas for life.</p>
               <p>By adhering to strict architectural principles while maintaining deep respect for natural materials, we create spaces that feel both grounded and expansive.</p>
@@ -41,13 +39,11 @@ export default function AboutPage() {
 
         <section className="section shell">
           <div className="section-intro">
-            <p className="eyebrow">How we work</p>
             <h2>Core Principles</h2>
           </div>
           <div className="principles-grid">
-            {principles.map(([number, title, copy]) => (
+            {principles.map(([title, copy]) => (
               <article key={title}>
-                <span>{number}</span>
                 <h3>{title}</h3>
                 <p>{copy}</p>
               </article>
@@ -57,8 +53,7 @@ export default function AboutPage() {
 
         <section className="leadership">
           <div className="shell">
-            <div className="section-intro editorial-offset">
-              <p className="eyebrow">People</p>
+            <div className="section-intro section-intro--center">
               <h2>Leadership</h2>
             </div>
             <div className="leadership-grid">
