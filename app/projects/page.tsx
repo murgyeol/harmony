@@ -25,12 +25,13 @@ const projects = [
     alt: "Modern high-rise lobby with concrete columns and glass walls",
   },
   {
-    title: "Timber Retreat",
-    location: "Portland, Oregon",
+    title: "아파트 분양 모델하우스",
+    location: "Hyosungtonw, Harrington",
     category: "Model House",
     href: "/projects/model-house",
-    image: "/stitch/projects-03.jpg",
-    alt: "Minimal concrete and timber house set within a forest",
+    image: "/project-photos/model-house/mh01.png",
+    alt: "아파트 분양 모델하우스 Hyosungtonw Harrington",
+    locale: "ko",
   },
   {
     title: "태재대학교 리모델링",
