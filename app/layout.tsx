@@ -24,7 +24,7 @@ export async function generateMetadata(): Promise<Metadata> {
     description,
     openGraph: {
       title: "HARMONY",
-      description: "Build Harmony & Embrace Harmony",
+      description: "가치를 짓다, 삶을 담다 — 주식회사 하모니 건설",
       type: "website",
       images: [{ url: new URL("/og.png", origin), width: 1734, height: 907 }],
     },

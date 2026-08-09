@@ -23,7 +23,7 @@ async function render(pathname) {
 }
 
 const routes = [
-  ["/", "조화(調和)를 짓다."],
+  ["/", "가치를 짓다, 삶을 담다"],
   ["/about", "Our Philosophy"],
   ["/projects", "Our Work"],
   ["/projects/model-house", "해링턴 목감 견본주택"],
@@ -53,6 +53,10 @@ for (const [pathname, expected] of routes) {
     );
     if (pathname === "/") {
       assert.doesNotMatch(html, /class="eyebrow">Harmony Construction/);
+      assert.match(html, /공간을 짓다, 내일은 담다/);
+      assert.match(html, /사람과 공간의 아름다운 어울림/);
+      assert.match(html, /주식회사 하모니 건설이 함께 하겠습니다/);
+      assert.doesNotMatch(html, /조화\(調和\)를 짓다|조화\(調和\)를 담다|Build Harmony|home-hero__english/);
     }
     if (pathname === "/about") {
       assert.doesNotMatch(html, /About Harmony|Our approach|How we work|>People</);

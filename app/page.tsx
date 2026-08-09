@@ -43,10 +43,11 @@ export default function Home() {
           <div className="home-hero__wash" />
           <div className="home-hero__content shell">
             <h1>
-              <span>조화(調和)를 짓다.</span>
-              <span>조화(調和)를 담다</span>
+              <span>가치를 짓다, 삶을 담다</span>
+              <span>공간을 짓다, 내일은 담다</span>
+              <span>사람과 공간의 아름다운 어울림</span>
+              <span>주식회사 하모니 건설이 함께 하겠습니다</span>
             </h1>
-            <p className="home-hero__english">Build Harmony &amp; Embrace Harmony</p>
           </div>
         </section>
 
