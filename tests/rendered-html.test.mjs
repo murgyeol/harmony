@@ -77,5 +77,8 @@ for (const [pathname, expected] of routes) {
       assert.doesNotMatch(html, /Cultural|Concept|Interior|Facade|Material|A conceptual exploration/);
       assert.doesNotMatch(html, /Project category|project-tile__index/);
     }
+    if (pathname === "/projects/house") {
+      assert.doesNotMatch(html, /Project category|project-tile__index/);
+    }
   });
 }

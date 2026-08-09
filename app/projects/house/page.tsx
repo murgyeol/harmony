@@ -46,6 +46,8 @@ export default function HousePage() {
       intro="Residential spaces designed around structural integrity and human comfort. We balance the rugged reality of construction with the refined experience of living."
       projects={projects}
       cta="Ready to discuss your residential project?"
+      showCategoryLabel={false}
+      showIndexes={false}
     />
   );
 }
