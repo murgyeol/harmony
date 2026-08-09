@@ -17,12 +17,13 @@ const projects = [
     locale: "ko",
   },
   {
-    title: "Apex Tower",
-    location: "Chicago, Illinois",
+    title: "오피스 인테리어",
+    location: "OOO 로비",
     category: "Office",
     href: "/projects/office",
-    image: "/stitch/projects-02.jpg",
-    alt: "Modern high-rise lobby with concrete columns and glass walls",
+    image: "/project-photos/office/ofi01.png",
+    alt: "OOO 로비 오피스 인테리어",
+    locale: "ko",
   },
   {
     title: "공동주택 모델하우스",
