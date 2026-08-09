@@ -62,6 +62,7 @@ for (const [pathname, expected] of routes) {
       assert.match(html, /\/project-photos\/design\/d01\.png/);
       assert.match(html, /목감 해링턴 아파트/);
       assert.match(html, /\/project-photos\/house\/h01\.png/);
+      assert.match(html, /class="mosaic-card mosaic-card--1" lang="ko"/);
     }
   });
 }

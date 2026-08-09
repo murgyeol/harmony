@@ -14,6 +14,7 @@ const projects = [
     href: "/projects/house",
     image: "/project-photos/house/h01.png",
     alt: "목감 해링턴 아파트 실내인테리어",
+    locale: "ko",
   },
   {
     title: "Apex Tower",
@@ -38,6 +39,7 @@ const projects = [
     href: "/projects/design",
     image: "/project-photos/design/d01.png",
     alt: "태재대학교 리모델링 제안설계",
+    locale: "ko",
   },
 ];
 
@@ -54,7 +56,7 @@ export default function ProjectsPage() {
           <ProjectNav />
           <section className="projects-mosaic" aria-label="Selected projects">
             {projects.map((project, index) => (
-              <Link className={`mosaic-card mosaic-card--${index + 1}`} href={project.href} key={project.title}>
+              <Link className={`mosaic-card mosaic-card--${index + 1}`} href={project.href} key={project.title} lang={project.locale}>
                 <div className="mosaic-card__image">
                   <img src={project.image} alt={project.alt} />
                 </div>
