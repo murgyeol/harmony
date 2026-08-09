@@ -26,7 +26,12 @@ export default function HousePage() {
       <main className="page-main" id="top">
         <div className="shell">
           <ProjectNav active="house" />
-          <h1 className="visually-hidden">House</h1>
+          <header className="page-hero editorial-offset house-hero">
+            <h1>House</h1>
+            <p>
+              Residential spaces designed around structural integrity and human comfort. We balance the rugged reality of construction with the refined experience of living.
+            </p>
+          </header>
           <section className="house-gallery" aria-label="House project gallery">
             {photos.map((photo) => (
               <figure className="house-gallery__item" key={photo}>

@@ -245,7 +245,7 @@ h3 { font-size: clamp(1.55rem, 2vw, 2rem); line-height: 1.14; }
   display: grid;
   grid-template-columns: repeat(12, minmax(0, 1fr));
   gap: clamp(18px, 2.4vw, 36px);
-  padding: clamp(56px, 7vw, 96px) 0 var(--section);
+  padding: 0 0 var(--section);
   align-items: start;
 }
 .house-gallery__item { grid-column: span 6; margin: 0; }
@@ -389,7 +389,7 @@ h3 { font-size: clamp(1.55rem, 2vw, 2rem); line-height: 1.14; }
   .page-main { padding-top: 72px; }
   .page-hero { padding-block: 82px 64px; }
   .project-tile__meta { flex-direction: column; }
-  .house-gallery { display: block; padding-top: 42px; }
+  .house-gallery { display: block; }
   .house-gallery__item { margin-bottom: 18px; }
   .status { order: -1; }
   .projects-mosaic { display: block; padding-top: 64px; }

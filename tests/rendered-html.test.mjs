@@ -28,7 +28,7 @@ const routes = [
   ["/projects", "Our Work"],
   ["/projects/model-house", "해링턴 목감 견본주택"],
   ["/projects/office", "카라 더 봄 센터"],
-  ["/projects/house", "House project gallery"],
+  ["/projects/house", "Residential spaces designed around structural integrity"],
   ["/projects/design", "태재대학교 리모델링"],
 ];
 
@@ -88,6 +88,9 @@ for (const [pathname, expected] of routes) {
       assert.doesNotMatch(html, /Project category|project-tile__index/);
     }
     if (pathname === "/projects/house") {
+      assert.match(html, /<h1>House<\/h1>/);
+      assert.match(html, /human comfort/);
+      assert.match(html, /refined experience of living/);
       assert.match(html, /\/project-photos\/house\/h01\.png/);
       assert.match(html, /\/project-photos\/house\/781f04eb19043\.jpg/);
       assert.doesNotMatch(html, /Project category|project-tile__index|The Glass Pavilion|Concrete &amp; Light|Forest Retreat|The Floating Spine/);
