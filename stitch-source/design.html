@@ -1,0 +1,206 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Harmony Construction - Design Projects</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&amp;family=Hanken+Grotesk:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary": "#000000",
+                        "secondary-container": "#e5e2dd",
+                        "tertiary-fixed-dim": "#e2c19b",
+                        "on-background": "#1b1c1c",
+                        "on-tertiary-fixed-variant": "#594325",
+                        "surface-container-lowest": "#ffffff",
+                        "outline": "#747878",
+                        "on-primary-fixed-variant": "#474746",
+                        "surface": "#fbf9f8",
+                        "surface-container-highest": "#e4e2e2",
+                        "primary-fixed-dim": "#c8c6c5",
+                        "surface-container-high": "#eae8e7",
+                        "on-secondary-container": "#656461",
+                        "primary-container": "#1c1b1b",
+                        "on-error-container": "#93000a",
+                        "error": "#ba1a1a",
+                        "tertiary-container": "#291801",
+                        "secondary-fixed-dim": "#c9c6c2",
+                        "on-error": "#ffffff",
+                        "inverse-primary": "#c8c6c5",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary-fixed": "#1c1c19",
+                        "error-container": "#ffdad6",
+                        "primary-fixed": "#e5e2e1",
+                        "tertiary-fixed": "#ffddb6",
+                        "background": "#fbf9f8",
+                        "outline-variant": "#c4c7c7",
+                        "surface-variant": "#e4e2e2",
+                        "on-surface-variant": "#444748",
+                        "surface-bright": "#fbf9f8",
+                        "on-primary": "#ffffff",
+                        "surface-tint": "#5f5e5e",
+                        "on-secondary-fixed-variant": "#474743",
+                        "on-primary-container": "#858383",
+                        "secondary-fixed": "#e5e2dd",
+                        "secondary": "#5f5e5b",
+                        "on-tertiary-container": "#9b7f5d",
+                        "on-primary-fixed": "#1c1b1b",
+                        "inverse-surface": "#303030",
+                        "on-surface": "#1b1c1c",
+                        "on-tertiary-fixed": "#291801",
+                        "inverse-on-surface": "#f2f0f0",
+                        "surface-container-low": "#f5f3f3",
+                        "surface-dim": "#dbd9d9",
+                        "on-secondary": "#ffffff",
+                        "primary": "#000000",
+                        "surface-container": "#efeded"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-mobile": "20px",
+                        "unit": "8px",
+                        "margin-desktop": "64px",
+                        "gutter": "24px",
+                        "max-width": "1440px"
+                    },
+                    "fontFamily": {
+                        "label-sm": ["Hanken Grotesk"],
+                        "headline-md": ["EB Garamond"],
+                        "headline-lg": ["EB Garamond"],
+                        "headline-sm": ["EB Garamond"],
+                        "headline-xl": ["EB Garamond"],
+                        "headline-lg-mobile": ["EB Garamond"],
+                        "label-md": ["Hanken Grotesk"],
+                        "body-md": ["Hanken Grotesk"],
+                        "body-lg": ["Hanken Grotesk"],
+                        "headline-xl-mobile": ["EB Garamond"]
+                    },
+                    "fontSize": {
+                        "label-sm": ["12px", { "lineHeight": "16px", "fontWeight": "500" }],
+                        "headline-md": ["32px", { "lineHeight": "40px", "fontWeight": "500" }],
+                        "headline-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.01em", "fontWeight": "400" }],
+                        "headline-sm": ["24px", { "lineHeight": "32px", "fontWeight": "500" }],
+                        "headline-xl": ["64px", { "lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "400" }],
+                        "headline-lg-mobile": ["32px", { "lineHeight": "40px", "fontWeight": "400" }],
+                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.1em", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "headline-xl-mobile": ["40px", { "lineHeight": "48px", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-background text-on-background antialiased selection:bg-secondary-container selection:text-on-secondary-container min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-background/90 border-b border-outline/10 backdrop-blur-md">
+<div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-6 max-w-max-width mx-auto">
+<a class="font-headline-md text-headline-md tracking-tighter text-primary dark:text-primary-fixed hover:opacity-80 transition-opacity" href="#">HARMONY</a>
+<!-- Desktop Navigation -->
+<div class="hidden md:flex gap-gutter items-center">
+<a class="text-secondary dark:text-secondary-fixed hover:text-primary dark:hover:text-primary-fixed transition-colors font-label-md text-label-md" href="#">Home</a>
+<a class="text-secondary dark:text-secondary-fixed hover:text-primary dark:hover:text-primary-fixed transition-colors font-label-md text-label-md" href="#">About Us</a>
+<a class="text-primary dark:text-primary-fixed border-b border-primary dark:border-primary-fixed pb-1 font-label-md text-label-md" href="{{DATA:SCREEN:SCREEN_10}}">Projects</a>
+<a class="text-secondary dark:text-secondary-fixed hover:text-primary dark:hover:text-primary-fixed transition-colors font-label-md text-label-md" href="#">Contact</a>
+</div>
+<!-- Mobile Menu Toggle -->
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+<!-- Main Content -->
+<main class="flex-grow pt-32 pb-24 md:pt-40 md:pb-32 px-margin-mobile md:px-margin-desktop max-w-max-width mx-auto w-full">
+<!-- Header Section -->
+<header class="mb-16 md:mb-24 md:col-start-3 md:col-span-8">
+<h1 class="font-headline-xl-mobile text-headline-xl-mobile md:font-headline-xl md:text-headline-xl text-primary mb-6">Design</h1>
+<p class="font-body-lg text-body-lg text-secondary max-w-2xl leading-relaxed">
+                Exploring the intersection of aesthetic ambition and functional longevity. Our design-led projects prioritize spatial harmony, material integrity, and a profound respect for their environment.
+            </p>
+</header><section class="mb-12">
+<div class="flex space-x-6 border-b border-outline/10 pb-2">
+<a href="{{DATA:SCREEN:SCREEN_6}}" class="font-label-md text-label-md uppercase tracking-wider pb-2 text-secondary hover:text-primary transition-colors">Model House</a>
+<a href="{{DATA:SCREEN:SCREEN_7}}" class="font-label-md text-label-md uppercase tracking-wider pb-2 text-secondary hover:text-primary transition-colors">Office</a>
+<a href="{{DATA:SCREEN:SCREEN_5}}" class="font-label-md text-label-md uppercase tracking-wider pb-2 text-secondary hover:text-primary transition-colors">House</a>
+<a href="{{DATA:SCREEN:SCREEN_3}}" class="font-label-md text-label-md uppercase tracking-wider pb-2 text-primary border-b-2 border-primary">Design</a>
+</div>
+</section>
+<!-- Project Grid -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-y-16 md:gap-gutter">
+<!-- Project 1: Large feature -->
+<article class="md:col-span-12 group cursor-pointer">
+<div class="relative overflow-hidden mb-6 aspect-[16/9] bg-surface-container border border-outline/10">
+<img alt="Project image" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A striking modern architectural design concept featuring clean, minimalist lines and expansive glass windows. The building sits gracefully in a serene natural setting, with warm natural light highlighting the textured concrete and natural wood materials. The aesthetic is corporate yet approachable, embodying quiet confidence and structural integrity. Photorealistic, high-end editorial photography style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAm-kNAjWz9Ub0PvNCSjwW5ILrDIXVC2zSKMLspJpN7rVAjoHJyzFkNXOyHHLX3bbT0oWSRfy7zTZBlODPTH2tKkh2-aV2ifgbLS0SoNdmWKgvoTmKVm8fN7zIvlUcn0rPeF4yy_3bk_v-uh4ZLZaQMmDH2Rf8Z8I6dzO4JsiW-n4xlORDFa5j3XC0ErnXnevJYjbAQ_R72koWLBR249jUpGkgoxygccWHEKkDPvPY2NJOMwVIOA_VU">
+</div>
+<div class="flex items-center gap-4 mb-3">
+<span class="bg-surface-container-high text-on-surface px-3 py-1 font-label-sm text-label-sm uppercase tracking-wider">Cultural</span>
+<span class="bg-surface-container-high text-on-surface px-3 py-1 font-label-sm text-label-sm uppercase tracking-wider">Concept</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-primary mb-2">The Atrium Pavillion</h2>
+<p class="font-body-md text-body-md text-secondary">A conceptual exploration of light and volume in public spaces.</p>
+</article>
+<!-- Project 2: Half width -->
+<article class="md:col-span-6 group cursor-pointer mt-8 md:mt-0">
+<div class="relative overflow-hidden mb-6 aspect-[4/3] bg-surface-container border border-outline/10">
+<img alt="Project image" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="An interior view of a minimalist modern gallery space. The room features a polished concrete floor, stark white walls, and a carefully curated selection of abstract sculptures. Soft, diffuse light filters in from a hidden skylight, creating a serene and contemplative atmosphere. The aesthetic is extremely clean, sophisticated, and high-end. High-resolution architectural photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNDhCOUODXWWY7VWcGDpVtDhWMK01ceDqdgyqovnC-RNPIPqQXTcA4JuoxzOAoC4LifVFgAoiZ5_VGPDXBKuXQfTM8Yh2WyWxs1-y_tVW_ESkLQFGBGkGgYctOX8yV6haCgdQw7Zc2LIeTnae3SfjRbMME0Upk9tQXbiKcpQK3EqrYRU1W2X6ntRyMmMuhI6Tly0CwfK6G4K90rnH3mWWT9LWH7I31eNhSZpQjTrZ-SCJ3T8FMLPd9">
+</div>
+<div class="flex items-center gap-4 mb-3">
+<span class="bg-surface-container-high text-on-surface px-3 py-1 font-label-sm text-label-sm uppercase tracking-wider">Interior</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-primary mb-2">Gallery Horizon</h2>
+<p class="font-body-md text-body-md text-secondary">Redefining exhibition spaces through minimalist intervention.</p>
+</article>
+<!-- Project 3: Half width -->
+<article class="md:col-span-6 group cursor-pointer mt-8 md:mt-0">
+<div class="relative overflow-hidden mb-6 aspect-[4/3] bg-surface-container border border-outline/10">
+<img alt="Project image" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A detailed close-up of a modern architectural facade. The image highlights a precise grid of deep charcoal steel framing against warm beige stone panels. The interplay of textures and the strict geometry convey a sense of structural integrity and meticulous craftsmanship. The lighting emphasizes the depth and tectonic qualities of the materials. Professional architectural detail photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJr5vdZ75_i_ZO5BT_h3aDtIaAnIipsOlqSv-K0kWDYVpdo7ZLL9x_uOlj34SisyRy_DR-ti0dqJEPhZ9lAS-wODQhHg8ChWv4CEtizCrOfUjCaquHozE9en_kKa6jne6pHPyIat8DG10SGnrOwTwNFBJdDYjqYMFrKh4R-iG26keP23K2atotxPhKg0_NBleh0CjvTVgLMKr2rVEjh1xgaaOpE988c8BDgnFEja8FluTkIty1vXIB">
+</div>
+<div class="flex items-center gap-4 mb-3">
+<span class="bg-surface-container-high text-on-surface px-3 py-1 font-label-sm text-label-sm uppercase tracking-wider">Facade</span>
+<span class="bg-surface-container-high text-on-surface px-3 py-1 font-label-sm text-label-sm uppercase tracking-wider">Material</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-primary mb-2">Tectonic Study 04</h2>
+<p class="font-body-md text-body-md text-secondary">Material articulation and structural expression.</p>
+</article>
+</section>
+<!-- CTA Section -->
+<section class="mt-24 md:mt-32 pt-16 border-t border-outline/10 flex flex-col items-start md:items-center text-left md:text-center">
+<h3 class="font-headline-md text-headline-md text-primary mb-6">Discuss a Concept</h3>
+<p class="font-body-md text-body-md text-secondary max-w-lg mb-8">Our design team is available to consult on ambitious cultural and residential concepts.</p>
+<button class="bg-primary text-secondary-container font-label-md text-label-md px-8 py-4 uppercase tracking-wider hover:bg-secondary transition-colors duration-300 flex items-center gap-2">
+<span class="">Initiate Dialogue</span>
+<span class="material-symbols-outlined" style="font-size: 18px;">arrow_forward</span>
+</button>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-20 bg-surface-container-low dark:bg-surface-container-lowest border-t border-outline/10 mt-auto">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop max-w-max-width mx-auto">
+<div class="col-span-1 md:col-span-2 mb-8 md:mb-0">
+<div class="font-headline-sm text-headline-sm text-primary dark:text-primary-fixed mb-4">HARMONY</div>
+<p class="font-label-sm text-label-sm text-secondary dark:text-secondary-fixed">© 2024 Harmony Construction. Built for longevity.</p>
+</div>
+<div class="flex flex-col gap-4">
+<a class="font-body-md text-body-md text-secondary dark:text-secondary-fixed hover:text-primary transition-colors underline" href="#">Privacy Policy</a>
+<a class="font-body-md text-body-md text-secondary dark:text-secondary-fixed hover:text-primary transition-colors underline" href="#">Terms of Service</a>
+</div>
+<div class="flex flex-col gap-4">
+<a class="font-body-md text-body-md text-secondary dark:text-secondary-fixed hover:text-primary transition-colors underline" href="#">Instagram</a>
+<a class="font-body-md text-body-md text-secondary dark:text-secondary-fixed hover:text-primary transition-colors underline" href="#">LinkedIn</a>
+</div>
+</div>
+</footer>
+
+
+</body></html>

@@ -1,0 +1,246 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Model House Projects | Harmony Construction</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&amp;family=Hanken+Grotesk:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary": "#000000",
+                        "secondary-container": "#e5e2dd",
+                        "tertiary-fixed-dim": "#e2c19b",
+                        "on-background": "#1b1c1c",
+                        "on-tertiary-fixed-variant": "#594325",
+                        "surface-container-lowest": "#ffffff",
+                        "outline": "#747878",
+                        "on-primary-fixed-variant": "#474746",
+                        "surface": "#fbf9f8",
+                        "surface-container-highest": "#e4e2e2",
+                        "primary-fixed-dim": "#c8c6c5",
+                        "surface-container-high": "#eae8e7",
+                        "on-secondary-container": "#656461",
+                        "primary-container": "#1c1b1b",
+                        "on-error-container": "#93000a",
+                        "error": "#ba1a1a",
+                        "tertiary-container": "#291801",
+                        "secondary-fixed-dim": "#c9c6c2",
+                        "on-error": "#ffffff",
+                        "inverse-primary": "#c8c6c5",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary-fixed": "#1c1c19",
+                        "error-container": "#ffdad6",
+                        "primary-fixed": "#e5e2e1",
+                        "tertiary-fixed": "#ffddb6",
+                        "background": "#fbf9f8",
+                        "outline-variant": "#c4c7c7",
+                        "surface-variant": "#e4e2e2",
+                        "on-surface-variant": "#444748",
+                        "surface-bright": "#fbf9f8",
+                        "on-primary": "#ffffff",
+                        "surface-tint": "#5f5e5e",
+                        "on-secondary-fixed-variant": "#474743",
+                        "on-primary-container": "#858383",
+                        "secondary-fixed": "#e5e2dd",
+                        "secondary": "#5f5e5b",
+                        "on-tertiary-container": "#9b7f5d",
+                        "on-primary-fixed": "#1c1b1b",
+                        "inverse-surface": "#303030",
+                        "on-surface": "#1b1c1c",
+                        "on-tertiary-fixed": "#291801",
+                        "inverse-on-surface": "#f2f0f0",
+                        "surface-container-low": "#f5f3f3",
+                        "surface-dim": "#dbd9d9",
+                        "on-secondary": "#ffffff",
+                        "primary": "#000000",
+                        "surface-container": "#efeded"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-mobile": "20px",
+                        "unit": "8px",
+                        "margin-desktop": "64px",
+                        "gutter": "24px",
+                        "max-width": "1440px"
+                    },
+                    "fontFamily": {
+                        "label-sm": ["Hanken Grotesk"],
+                        "headline-md": ["EB Garamond"],
+                        "headline-lg": ["EB Garamond"],
+                        "headline-sm": ["EB Garamond"],
+                        "headline-xl": ["EB Garamond"],
+                        "headline-lg-mobile": ["EB Garamond"],
+                        "label-md": ["Hanken Grotesk"],
+                        "body-md": ["Hanken Grotesk"],
+                        "body-lg": ["Hanken Grotesk"],
+                        "headline-xl-mobile": ["EB Garamond"]
+                    },
+                    "fontSize": {
+                        "label-sm": ["12px", { "lineHeight": "16px", "fontWeight": "500" }],
+                        "headline-md": ["32px", { "lineHeight": "40px", "fontWeight": "500" }],
+                        "headline-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.01em", "fontWeight": "400" }],
+                        "headline-sm": ["24px", { "lineHeight": "32px", "fontWeight": "500" }],
+                        "headline-xl": ["64px", { "lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "400" }],
+                        "headline-lg-mobile": ["32px", { "lineHeight": "40px", "fontWeight": "400" }],
+                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.1em", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "headline-xl-mobile": ["40px", { "lineHeight": "48px", "fontWeight": "400" }]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        /* Minimalist Architectural Adjustments */
+        body {
+            background-color: theme('colors.background');
+            color: theme('colors.on-background');
+        }
+        .architectural-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            padding: 0 20px;
+        }
+        @media (min-width: 768px) {
+            .architectural-grid {
+                grid-template-columns: repeat(12, 1fr);
+                gap: 24px;
+                padding: 0 64px;
+            }
+        }
+        .project-card-image-container {
+            position: relative;
+            overflow: hidden;
+            border: 1px solid rgba(116, 120, 120, 0.15); /* outline color at 15% opacity */
+        }
+        .project-card-image-container img {
+            transition: transform 0.7s ease;
+        }
+        .project-card-image-container:hover img {
+            transform: scale(1.03);
+        }
+    </style>
+</head>
+<body class="antialiased min-h-screen flex flex-col font-body-md text-body-md selection:bg-tertiary-fixed-dim selection:text-on-tertiary-fixed-variant">
+<!-- TopNavBar Component -->
+<nav class="fixed top-0 w-full z-50 bg-transparent border-b border-outline/10 backdrop-blur-md">
+<div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-6 max-w-max-width mx-auto">
+<!-- Brand Logo -->
+<a class="font-headline-md text-headline-md tracking-tighter text-primary dark:text-primary-fixed uppercase tracking-[0.2em] hover:opacity-80 transition-opacity" href="#">
+                HARMONY
+            </a>
+<!-- Desktop Navigation Links -->
+<div class="hidden md:flex items-center space-x-12 font-label-md text-label-md uppercase">
+<a class="text-secondary dark:text-secondary-fixed hover:text-primary dark:hover:text-primary-fixed transition-colors" href="#">Home</a>
+<a class="text-secondary dark:text-secondary-fixed hover:text-primary dark:hover:text-primary-fixed transition-colors" href="#">About Us</a>
+<a class="text-primary dark:text-primary-fixed border-b border-primary dark:border-primary-fixed pb-1" href="#">Projects</a>
+<a class="text-secondary dark:text-secondary-fixed hover:text-primary dark:hover:text-primary-fixed transition-colors" href="#">Contact</a>
+</div>
+<!-- Mobile Menu Button (Hamburger) -->
+<button class="md:hidden text-primary flex items-center justify-center p-2 hover:bg-secondary-container/10 transition-all duration-300 rounded-none">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+</div>
+</nav>
+<!-- Main Content Canvas -->
+<main class="flex-grow pt-32 pb-24 max-w-max-width mx-auto w-full">
+<!-- Page Header Section -->
+<div class="architectural-grid mb-12">
+    <div class="col-span-4 md:col-span-8 md:col-start-3 flex flex-wrap gap-x-8 gap-y-4 border-b border-outline/10 pb-4">
+        <a href="{{DATA:SCREEN:SCREEN_6}}" class="font-label-md text-label-md uppercase tracking-widest text-primary border-b-2 border-primary pb-4 -mb-[17px]">Model House</a>
+        <a href="{{DATA:SCREEN:SCREEN_7}}" class="font-label-md text-label-md uppercase tracking-widest text-secondary hover:text-primary transition-colors pb-4">Office</a>
+        <a href="{{DATA:SCREEN:SCREEN_5}}" class="font-label-md text-label-md uppercase tracking-widest text-secondary hover:text-primary transition-colors pb-4">House</a>
+        <a href="{{DATA:SCREEN:SCREEN_3}}" class="font-label-md text-label-md uppercase tracking-widest text-secondary hover:text-primary transition-colors pb-4">Design</a>
+    </div>
+</div><header class="architectural-grid mb-[120px] pt-12 md:pt-24">
+<div class="col-span-4 md:col-span-8 md:col-start-3 text-left">
+<h1 class="font-headline-xl-mobile md:font-headline-xl text-headline-xl-mobile md:text-headline-xl text-primary mb-6">Model House</h1>
+<p class="font-body-lg text-body-lg text-secondary max-w-2xl leading-relaxed">
+                    A curated selection of our prototypical residential designs. Each model house serves as an exploration of spatial efficiency, structural integrity, and modern living, designed to be adapted to diverse topographies and client visions.
+                </p>
+</div>
+</header>
+<!-- Project Grid Section -->
+<section class="architectural-grid">
+<!-- Project Card 1 -->
+<article class="col-span-4 md:col-span-6 mb-16 group cursor-pointer">
+<div class="project-card-image-container aspect-[4/3] w-full mb-6 bg-surface-container-low">
+<img class="w-full h-full object-cover grayscale-[20%] group-hover:grayscale-0 transition-all duration-700" data-alt="A highly detailed architectural exterior shot of a modern, minimalist model house at dawn. The house features clean, orthogonal lines, expansive floor-to-ceiling glass windows reflecting the soft morning light, and smooth concrete and warm wood cladding. The setting is a manicured but naturalistic landscape, evoking a sense of quiet luxury and structural integrity in a light-mode aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEx7u3_ma5SM4IvEhmMj9Nc2yAUVMj9uPgIkZvtEOLQgcs7eAQOxe8EZwKQ2LzFv8CxsuD_arHf7zcEyviXLeNVW2G1CYwMFLCtbUVDXGj9mJprLRVUPQjglm0u4kMyDQdu7D5NVNGdgz-qZLHO4zYZ8XJHEtOHdDejCOcNvCzwoIBA8LC4IhhYETlwAkIV8GNBgajLqYtlGp9143k-iz_Y7Wsd_GmTh8FLhDidnluABFevar9t2Mi">
+</div>
+<div class="flex items-center space-x-3 mb-3">
+<span class="inline-block px-2 py-1 bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">Residential</span>
+<span class="inline-block px-2 py-1 bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">Minimalist</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-primary mb-2 group-hover:text-tertiary-fixed-dim transition-colors">The Pavilion Model</h2>
+<p class="font-body-md text-body-md text-secondary">A single-story exploration of indoor-outdoor flow, utilizing deep overhangs and open-plan central living areas.</p>
+</article>
+<!-- Project Card 2 -->
+<article class="col-span-4 md:col-span-6 mb-16 group cursor-pointer md:mt-24">
+<div class="project-card-image-container aspect-[3/4] w-full mb-6 bg-surface-container-low">
+<img class="w-full h-full object-cover grayscale-[20%] group-hover:grayscale-0 transition-all duration-700" data-alt="A stunning interior architectural photograph of a modern model house living room bathed in natural daylight. The space is characterized by an open floor plan, high ceilings with exposed but refined structural beams, and minimalist, high-end furniture in neutral beige and charcoal tones. The aesthetic is clean, corporate yet inviting, emphasizing expansive whitespace and meticulous alignment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZe5nBmyYeENEFKKydRFEI-5wfZKnYiO-P3amevLc0Wt0UNu-pacy7aNJR-RCBIgF4i6p4HTo7KIHrkeMQ6VozZxcFRtl0Fh_8vtQecVDiYLapYEfQVjM3XpUD_omPMXWrn35Wc1ZL-j-TkyoIkZ0NUJwyes4PIQDWWt3YY64l1A0q34XON4iiVUukF1faFShhJzkjWyCiu1od8Jgq12YG5nnYjSJCC978edXzSfT5ZuahuhNWoB5P">
+</div>
+<div class="flex items-center space-x-3 mb-3">
+<span class="inline-block px-2 py-1 bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">Multi-Story</span>
+<span class="inline-block px-2 py-1 bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">Urban</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-primary mb-2 group-hover:text-tertiary-fixed-dim transition-colors">Vertical Courtyard</h2>
+<p class="font-body-md text-body-md text-secondary">Designed for dense urban lots, this model prioritizes verticality and natural light drawn from a central, private atrium.</p>
+</article>
+<!-- Project Card 3 -->
+<article class="col-span-4 md:col-span-8 md:col-start-3 mb-16 group cursor-pointer">
+<div class="project-card-image-container aspect-[16/9] w-full mb-6 bg-surface-container-low">
+<img class="w-full h-full object-cover grayscale-[20%] group-hover:grayscale-0 transition-all duration-700" data-alt="An expansive, wide-angle architectural exterior view of an upscale model home situated on a slight incline. The design features a bold, cantilevered upper volume clad in dark charcoal panels, contrasted against a warm beige stone lower level. The lighting is bright and clear, highlighting the precision of the construction and the minimalist, structural aesthetic typical of high-end corporate architecture." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJ_gcUGJSLdoiqlXT3uquig3xy_8br6s8LIIFDbF8T77q-l-Ag-OMR38Tn6pP4VeIgmXiSiHVY7Qu-a0nEro1O9rB90G4poOlSzypxGL2s9ildhZ7rtaYXC9XqHPDuLACI7viBNNgw_RmOnBZc936WjI616jNaBtNYzV8ZXdqlvhktN3e7-JBWfmM1e8bJFlt2fid-7Cnfrn7ge5MpD76QN2q5WbEQ631ysQ9InEV247pw7XFCz4Cn">
+</div>
+<div class="flex items-center space-x-3 mb-3">
+<span class="inline-block px-2 py-1 bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">Estate</span>
+<span class="inline-block px-2 py-1 bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">Cantilever</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-primary mb-2 group-hover:text-tertiary-fixed-dim transition-colors">The Overlook</h2>
+<p class="font-body-md text-body-md text-secondary">A commanding presence designed to maximize vistas. Structural rigor allows for dramatic cantilevers and expansive, uninterrupted glazing.</p>
+</article>
+</section>
+<!-- Call to Action Section -->
+<section class="mt-[120px] text-center px-margin-mobile md:px-margin-desktop border-t border-outline/10 pt-24">
+<h3 class="font-headline-sm text-headline-sm text-primary mb-6">Ready to discuss your vision?</h3>
+<button class="bg-tertiary text-tertiary-fixed-dim font-label-md text-label-md px-8 py-4 uppercase tracking-widest hover:bg-secondary transition-colors duration-300">
+                Inquire About Models
+            </button>
+</section>
+</main>
+<!-- Footer Component -->
+<footer class="w-full py-20 bg-surface-container-low dark:bg-surface-container-lowest border-t border-outline/10 mt-auto">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop max-w-max-width mx-auto">
+<!-- Brand & Copyright -->
+<div class="col-span-1 md:col-span-2 mb-8 md:mb-0">
+<h4 class="font-headline-sm text-headline-sm text-primary dark:text-primary-fixed uppercase tracking-[0.2em] mb-4">HARMONY</h4>
+<p class="font-body-md text-body-md text-secondary dark:text-secondary-fixed">© 2024 Harmony Construction. Built for longevity.</p>
+</div>
+<!-- Links Column 1 -->
+<div class="col-span-1 flex flex-col space-y-4 font-label-sm text-label-sm uppercase">
+<a class="text-secondary dark:text-secondary-fixed hover:text-primary transition-colors underline" href="#">Privacy Policy</a>
+<a class="text-secondary dark:text-secondary-fixed hover:text-primary transition-colors underline" href="#">Terms of Service</a>
+</div>
+<!-- Links Column 2 -->
+<div class="col-span-1 flex flex-col space-y-4 font-label-sm text-label-sm uppercase mt-8 md:mt-0">
+<a class="text-secondary dark:text-secondary-fixed hover:text-primary transition-colors underline" href="#">Instagram</a>
+<a class="text-secondary dark:text-secondary-fixed hover:text-primary transition-colors underline" href="#">LinkedIn</a>
+</div>
+</div>
+</footer>
+
+
+</body></html>
