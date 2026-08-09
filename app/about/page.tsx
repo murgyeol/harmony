@@ -93,6 +93,7 @@ export default function AboutPage() {
           <div className="shell">
             <div className="section-intro section-intro--center">
               <h2>Leadership</h2>
+              <p>(AI로 생성한 가상 인물입니다)</p>
             </div>
             <div className="leadership-grid">
               {leaders.map(([name, role, image]) => (
