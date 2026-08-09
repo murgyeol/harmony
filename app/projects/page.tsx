@@ -34,12 +34,12 @@ const projects = [
     locale: "ko",
   },
   {
-    title: "태재대학교 리모델링",
-    location: "제안설계",
+    title: "리모델링",
+    location: "태재대학교 제안 설계 및 시공",
     category: "Design",
     href: "/projects/design",
     image: "/project-photos/design/d01.png",
-    alt: "태재대학교 리모델링 제안설계",
+    alt: "태재대학교 제안 설계 및 시공 리모델링",
     locale: "ko",
   },
 ];
