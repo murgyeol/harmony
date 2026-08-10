@@ -29,7 +29,7 @@ export default function HousePage() {
           <header className="page-hero editorial-offset house-hero">
             <h1>House</h1>
             <p>
-              Residential spaces designed around structural integrity and human comfort. We balance the rugged reality of construction with the refined experience of living.
+              Residential spaces designed with an emphasis on structural integrity and human comfort. We create homes that balance the rugged reality of construction with the refined experience of living, prioritizing precision, longevity, and cohesive aesthetics in every detail.
             </p>
           </header>
           <section className="house-gallery" aria-label="House project gallery">
