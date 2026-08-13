@@ -1,25 +1,64 @@
 import assert from "node:assert/strict";
-import test from "node:test";
+import { spawn } from "node:child_process";
+import { fileURLToPath } from "node:url";
+import { after, before, test } from "node:test";
 
-async function render(pathname) {
-  const workerUrl = new URL("../dist/server/index.js", import.meta.url);
-  workerUrl.searchParams.set("test", `${process.pid}-${Date.now()}-${pathname}`);
-  const { default: worker } = await import(workerUrl.href);
+const projectRoot = fileURLToPath(new URL("..", import.meta.url));
+const port = 32_000 + (process.pid % 1_000);
+const baseUrl = `http://127.0.0.1:${port}`;
+let server;
+let serverOutput = "";
 
-  return worker.fetch(
-    new Request(`http://localhost${pathname}`, {
-      headers: { accept: "text/html" },
-    }),
+before(async () => {
+  server = spawn(
+    process.execPath,
+    ["node_modules/next/dist/bin/next", "start", "-p", String(port)],
     {
-      ASSETS: {
-        fetch: async () => new Response("Not found", { status: 404 }),
-      },
-    },
-    {
-      waitUntil() {},
-      passThroughOnException() {},
+      cwd: projectRoot,
+      env: { ...process.env, PORT: String(port) },
+      stdio: ["ignore", "pipe", "pipe"],
     },
   );
+
+  server.stdout.on("data", (chunk) => {
+    serverOutput += chunk;
+  });
+  server.stderr.on("data", (chunk) => {
+    serverOutput += chunk;
+  });
+
+  const deadline = Date.now() + 30_000;
+  while (Date.now() < deadline) {
+    if (server.exitCode !== null) {
+      throw new Error(`Next.js server exited before startup:\n${serverOutput}`);
+    }
+
+    try {
+      const response = await fetch(baseUrl);
+      if (response.ok) return;
+    } catch {
+      // The server is still starting.
+    }
+
+    await new Promise((resolve) => setTimeout(resolve, 100));
+  }
+
+  throw new Error(`Timed out waiting for Next.js server:\n${serverOutput}`);
+});
+
+after(async () => {
+  if (!server || server.exitCode !== null) return;
+
+  await new Promise((resolve) => {
+    server.once("exit", resolve);
+    server.kill("SIGTERM");
+  });
+});
+
+async function render(pathname) {
+  return fetch(`${baseUrl}${pathname}`, {
+    headers: { accept: "text/html" },
+  });
 }
 
 const routes = [
